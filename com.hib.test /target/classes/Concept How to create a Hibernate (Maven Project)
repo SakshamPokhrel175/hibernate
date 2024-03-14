@@ -1,0 +1,70 @@
+                            HIBERNATE
+Here,
+hibernate is :
+			.Framework       which is  provided BY
+			.JAVA     and 
+			.also a Open source Relational Mapping (ORM) tools     that provides a 
+			.framework to map object-oriented domain models to relational databases for web applications.
+			
+			.ORM(Object Relational Mapping)
+
+
+
+Object-----> Relational ---->Mapping	
+
+here we need to create a files:
+							1. Model Class (eg: Employee.java)
+							2. hbm hibernate  mapping  fileds in DB     (xml files)    (eg:employee.hbm.xml)
+							3. cfg configuration  of DB					(xml files)    (eg:hibernate.cfg.xml)
+							4. tester controller    -- it will communicate by using CONFIGURATION
+							
+							
+Here how the files is INTER RELATED :
+
+4--->3--->2--->1
+4 files will going to call 3 files.
+3 files will going to call 2 files.
+2 files will going to call 1 files.							          
+ 
+ 
+ //SUMMARY 
+ Here,
+ 1. (4 FILES) TESTER can be a Main files  that Main files will going to call (3 FILES) DATABASE configuration , 
+ that will check that the database configuration are fine or not.
+ 
+ 2.  AND (3 FILES) Then this DataBase configuration will go and check (2 FILES) the fields of database like do we have that table ,
+ the files and everything.
+ 
+ 3. AND after that(2 FILES) will going to call (1 FILES) the operation whatever we are performing with this model class 
+ beacuse the fields which we are defining that is in them (FILES 2,3,4)
+ 
+ //
+ 
+ so it means that all files are INTERRELATED.
+ here the project we are creating is MAVEN PROJECT
+ 
+ 
+ (here first perform all the task in
+ prom.xml files,
+ by adding dependencies
+ 
+ //   <dependencies>
+	  
+
+  <dependency>
+  	<groupId>mysql</groupId>
+  	<artifactId>mysql-connector-java</artifactId>
+  	<version>8.0.28</version>
+  </dependency>
+  
+    <dependency>
+  	<groupId>org.hibernate</groupId>
+  	<artifactId>hibernate-core</artifactId>
+  	<version>5.4.32.Final</version>
+  </dependency>
+  
+  
+  </dependencies>
+  // add this dependencies in proml.xml inside  </project> after </version>
+ 
+ 

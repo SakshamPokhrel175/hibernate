@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  
+here we required  DTD
+ we go and search in folder: Maven Dependencies (which is there is left side)
+ then click : hibernate-core 5.4.32.Final.jar
+ then click on : org.hibernate
+ then seach ("look at lasstt") there is package:hibernate-mapping-3.0.dtd
+ click that dtd folder
+ 
+ 
+ //this code we are searching in dtd folder
+ 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	//
+-->
+
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+	
+<hibernate-mapping>
+
+<class name="Employee" table="employee">
+<id name="id" type="int"></id>
+<property name="name" type="string"></property>
+
+
+
+
+</class>
+
+</hibernate-mapping>
+
+
+
